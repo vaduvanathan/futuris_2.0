@@ -11,6 +11,7 @@ load_dotenv()
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api import endpoints
+from app.api import tts
 
 app = FastAPI(title="LLM Debate Agent")
 
@@ -24,6 +25,7 @@ app.add_middleware(
 )
 
 app.include_router(endpoints.router, prefix="/api")
+app.include_router(tts.router, prefix="/api")
 
 @app.get("/")
 async def root():

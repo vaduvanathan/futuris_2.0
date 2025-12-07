@@ -1,10 +1,10 @@
 import './App.css'
-import DebateInterface from './components/DebateInterface'
+import ComicDebateInterface from './components/ComicDebateInterface'
 
 function App() {
   return (
     <div className="App">
-      <DebateInterface />
+      <ComicDebateInterface />
     </div>
   )
 }
