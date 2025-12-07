@@ -5,7 +5,7 @@ import TypewriterText from './TypewriterText';
 
 // Placeholder images - in a real app these would be imported assets
 const IMAGES = {
-    Neo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Neo&clothing=blazerAndShirt&eyes=surprised&eyebrows=angry",
+    Neo: "/Neo.png",
     Smith: "https://api.dicebear.com/7.x/avataaars/svg?seed=Smith&clothing=suit&eyes=squint&eyebrows=angry",
     Morpheus: "https://api.dicebear.com/7.x/avataaars/svg?seed=Morpheus&clothing=shirtCrewNeck&eyes=default&eyebrows=default",
     Oracle: "https://api.dicebear.com/7.x/avataaars/svg?seed=Oracle&clothing=overall&eyes=happy"
@@ -286,20 +286,23 @@ const ComicDebateInterface: React.FC = () => {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 100px;
+            width: 140px;
             flex-shrink: 0;
+            z-index: 2;
         }
         .character-image {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            border: 2px solid #0f0;
-            background: #000;
-            object-fit: cover;
+            width: 100%;
+            height: auto;
+            max-height: 160px;
+            filter: drop-shadow(0 0 5px #0f0);
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+        .character-image:hover {
+            transform: scale(1.1);
         }
         .oracle-glow {
-            border-color: #ffff00;
-            box-shadow: 0 0 10px #ffff00;
+            filter: drop-shadow(0 0 10px #ffff00);
         }
         .character-name {
             margin-top: 0.5rem;
