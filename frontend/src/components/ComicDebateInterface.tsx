@@ -6,9 +6,9 @@ import TypewriterText from './TypewriterText';
 // Placeholder images - in a real app these would be imported assets
 const IMAGES = {
     Neo: "/Neo.png",
-    Smith: "https://api.dicebear.com/7.x/avataaars/svg?seed=Smith&clothing=suit&eyes=squint&eyebrows=angry",
-    Morpheus: "https://api.dicebear.com/7.x/avataaars/svg?seed=Morpheus&clothing=shirtCrewNeck&eyes=default&eyebrows=default",
-    Oracle: "https://api.dicebear.com/7.x/avataaars/svg?seed=Oracle&clothing=overall&eyes=happy"
+    Smith: "/Smith.png",
+    Morpheus: "/Morpheus.png",
+    Oracle: "/Oracle.png"
 };
 
 const VOICES = {
