@@ -34,7 +34,7 @@ images:
   - 'gcr.io/$PROJECT_ID/futuris-frontend'
 
 substitutions:
-  _API_URL: 'https://futuris-242775953468.asia-south1.run.app'
+  _API_URL: 'https://futuris-2-0-242775953468.asia-south1.run.app'
 
 options:
   logging: CLOUD_LOGGING_ONLY
