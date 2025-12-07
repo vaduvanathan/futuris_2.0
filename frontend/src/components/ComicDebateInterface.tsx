@@ -6,7 +6,7 @@ import TypewriterText from './TypewriterText';
 // Placeholder images - in a real app these would be imported assets
 const IMAGES = {
     Neo: "/Neo.png",
-    Smith: "/Smith.png",
+    Smith: "/smith.png",
     Morpheus: "/Morpheus.png",
     Oracle: "/Oracle.png"
 };
